@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+
+    <bean id="deck" class="Deck">
+        <constructor-arg ref="cards"/>
+    </bean>
+
+    <util:list id="cards">
+    <bean id="aceSpades" class="Card">
+        <constructor-arg value="Ace"/>
+        <constructor-arg value="Spades"/>
+        <constructor-arg value="true"/>
+    </bean>
+    <bean id="aceDiamonds" class="Card">
+        <constructor-arg value="Ace"/>
+        <constructor-arg value="Diamonds"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="aceCross" class="Card">
+        <constructor-arg value="Ace"/>
+        <constructor-arg value="Cross"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="aceHearts" class="Card">
+        <constructor-arg value="Ace"/>
+        <constructor-arg value="Hearts"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="jackSpades" class="Card">
+        <constructor-arg value="Jack"/>
+        <constructor-arg value="Spades"/>
+        <constructor-arg value="true"/>
+    </bean>
+    <bean id="jackDiamonds" class="Card">
+        <constructor-arg value="Jack"/>
+        <constructor-arg value="Diamonds"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="jackCross" class="Card">
+        <constructor-arg value="Jack"/>
+        <constructor-arg value="Cross"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="jackHearts" class="Card">
+        <constructor-arg value="Jack"/>
+        <constructor-arg value="Hearts"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="tenSpades" class="Card">
+        <constructor-arg value="Ten"/>
+        <constructor-arg value="Spades"/>
+        <constructor-arg value="true"/>
+    </bean>
+    <bean id="tenDiamonds" class="Card">
+        <constructor-arg value="Ten"/>
+        <constructor-arg value="Diamonds"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="tenCross" class="Card">
+        <constructor-arg value="Ten"/>
+        <constructor-arg value="Cross"/>
+        <constructor-arg value="false"/>
+    </bean>
+    <bean id="tenHearts" class="Card">
+        <constructor-arg value="Ten"/>
+        <constructor-arg value="Hearts"/>
+        <constructor-arg value="false"/>
+    </bean>
+    </util:list>
+</beans>
